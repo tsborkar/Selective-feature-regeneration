@@ -23,3 +23,26 @@ If you use our code, models or need to refer to our results, please use the foll
  year = {2020}
 }
 ```
+
+## Key Results on ILSVRC2012 Validation Set
+
+### Restoration accuracy for [Universal Adversarial Peturbations](https://arxiv.org/abs/1610.08401) (UAP)
+
+|   Model        |  [CaffeNet](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf)        |    [VGG-F](https://arxiv.org/abs/1405.3531)  |   [GoogLeNet](https://arxiv.org/abs/1409.4842)  |  [VGG-16](https://arxiv.org/abs/1409.1556)   |  [Res152](https://arxiv.org/abs/1512.03385)  |
+| :-----------:  | :--------------: | :---------: |   :----------: |   :---------:  | :---------: |
+|  Baseline      |   0.596          | 0.628       |      0.691     |       0.681    |   0.670     |
+|  *Ours*        |   **0.976**      | **0.967**   |      **0.970** |     **0.963**  |  **0.982**  | 
+
+Please refer to Table 2 in our paper for additional details.
+
+
+### Restoration accuracy for unseen stronger attack perturbations against CaffeNet
+
+|  Model     |  Attack Strength = 15    |   Attack Strength = 20    |   Attack Strength = 25      |
+| :---------:|  :--------:  |:---------:|:----------:|
+| Baseline   |     0.543    |    0.525  |     0.519   |
+| *Ours*     |     **0.952**    |    **0.896**  |     **0.854**   |
+
+Please refer to Table 2 in our paper for additional details.
+
+
