@@ -28,7 +28,7 @@ If you use our code, models or need to refer to our results, please use the foll
 
 ### Restoration accuracy for [Universal Adversarial Peturbations](https://arxiv.org/abs/1610.08401) (UAP)
 
-|   Model        |  [CaffeNet](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf)        |    [VGG-F](https://arxiv.org/abs/1405.3531)  |   [GoogLeNet](https://arxiv.org/abs/1409.4842)  |  [VGG-16](https://arxiv.org/abs/1409.1556)   |  [Res152](https://arxiv.org/abs/1512.03385)  |
+|   Methods        |  [CaffeNet](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf)        |    [VGG-F](https://arxiv.org/abs/1405.3531)  |   [GoogLeNet](https://arxiv.org/abs/1409.4842)  |  [VGG-16](https://arxiv.org/abs/1409.1556)   |  [Res152](https://arxiv.org/abs/1512.03385)  |
 | :-----------:  | :--------------: | :---------: |   :----------: |   :---------:  | :---------: |
 |  Baseline      |   0.596          | 0.628       |      0.691     |       0.681    |   0.670     |
 |  *Ours*        |   **0.976**      | **0.967**   |      **0.970** |     **0.963**  |  **0.982**  | 
@@ -36,13 +36,30 @@ If you use our code, models or need to refer to our results, please use the foll
 Please refer to Table 2. in our paper for additional details.
 
 
-### Restoration accuracy for unseen stronger attack perturbations against CaffeNet
+### Restoration accuracy for unseen stronger UAP attack perturbations against CaffeNet
 
-|  Model     |  Attack Strength = 15    |   Attack Strength = 20    |   Attack Strength = 25      |
+|  Method    |  Attack Strength = 15    |   Attack Strength = 20    |   Attack Strength = 25      |
 | :---------:|  :--------:  |:---------:|:----------:|
 | Baseline   |     0.543    |    0.525  |     0.519   |
 | *Ours*     |     **0.952**    |    **0.896**  |     **0.854**   |
 
-Please refer to Table 4. in our paper for additional details.
+Our defense is trained on attack examples with an attack strength of 10. Please refer to Table 4. in our paper for additional details. 
 
+### Restoration accuracy for other types of unseen universal attacks 
+
+#### CaffeNet
+
+| Method |  [FFF](https://arxiv.org/abs/1707.05572) | [NAG](https://arxiv.org/abs/1712.03390) | [S. Fool](https://arxiv.org/abs/1709.03582) |
+|:-------:| :------: | :-------:| :---------: |
+| Baseline  | 0.645  |  0.670   |    0.815    |
+| *Ours*    | **0.941** |  **0.840** |  **0.914** |
+
+#### ResNet 152
+
+| Method |  [GAP](https://arxiv.org/abs/1712.02328) | [G-UAP](https://arxiv.org/abs/1801.08092) | [sPGD](https://arxiv.org/abs/1812.03705) |
+|:-------:| :------: | :-------:| :---------: |
+| Baseline  | 0.640  | 0.726  | 0.671  |
+| *Ours*    | **0.922** | **0.914** |  **0.976** |
+
+Our defense is trained only one UAP attack examples. Please refer to Table 5. in our paper for additional details.
 
