@@ -101,7 +101,7 @@ Our defense is trained only one UAP attack examples. Please refer to Table 5. in
 <table>
 <thead>
  <tr>
-  <th align="center" colspan="5"> Baseline (Click for download/ details) </th>
+  <th align="center" colspan="5"> Baseline (Click for download/details) </th>
  </tr>
 </thead> 
  <tbody>
@@ -112,6 +112,9 @@ Our defense is trained only one UAP attack examples. Please refer to Table 5. in
  <td align="center"> VGG16 <a href="https://drive.google.com/file/d/1e4MHFcNrEd2b6qqhD4MGfDDZJ-dQA77o/view?usp=sharing"> :arrow_down: </a> </td> 
  <td align="center"> ResNet152 <a href="https://drive.google.com/file/d/1YAE5WOG1d_pkfEYdH8lRPut62NQyz94h/view?usp=sharing"> :arrow_down: </a> </td> 
   </tr>
+  <tr>
+   <td align="center" colspan="5"> ,b>Selective Feature Regeneration (Click for download/details) </b></td>  
+  <\tr>
  </tbody> 
 </table>
 
