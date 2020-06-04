@@ -113,7 +113,7 @@ Our defense is trained only one UAP attack examples. Please refer to Table 5. in
  <td align="center"> ResNet152 <a href="https://drive.google.com/file/d/1YAE5WOG1d_pkfEYdH8lRPut62NQyz94h/view?usp=sharing"> :arrow_down: </a> </td> 
   </tr>
   <tr>
-   <td align="center" colspan="5"> ,b>Selective Feature Regeneration (Click for download/details) </b></td>  
+   <td align="center" colspan="5"> <b>Selective Feature Regeneration (Click for download/details) </b></td>  
   <\tr>
  </tbody> 
 </table>
