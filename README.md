@@ -70,3 +70,13 @@ Effectiveness of feature regeneration units at masking adversarial perturbations
 
 Our defense is trained only one UAP attack examples. Please refer to Table 5. in our paper for additional details.
 
+## Trained Defense Models
+<p align="center">
+<img src="fig/FRU.PNG" height="200"></p>
+
+<p align="justify"><em><b>
+Feature Regeneration Unit (FRU) acting on the activations of the N most susceptible
+filters in a DNN layer. D represents the FRU kernel depth and
+has a default value of N. All convolutional layers except the final
+1×1 layer are also followed by batch normalization and a ReLU
+ non-linearity. # parameters per FRU ≈ 18D^2 + 2ND. </b></em></p>
