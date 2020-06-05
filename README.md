@@ -15,8 +15,8 @@ A complete description of our CVPR 2020 work can be found in the pre-print on [A
 Defending Against Adversarial Attacks by Selective Feature Regeneration: Convolutional filter activations in the baseline DNN (top) are first sorted in order of vulnerability to adversarial noise using their respective filter weight norms (see Manuscript). For each considered layer, we use a feature regeneration unit, consisting of a residual block with a single skip connection (4 layers), to regenerate only the most adversarially susceptible activations into resilient features that restore the lost accuracy of the baseline DNN, while leaving the remaining filter activations unchanged. We train these units on both clean and perturbed images in every mini-batch using the same target loss as the baseline DNN such that all parameters of the baseline DNN are left unchanged during training. </b></em></p>
 
 ### Feature Regeneration Unit (FRU)
-
-<img src="fig/FRU.PNG" align="center">
+<p align="center">
+<img src="fig/FRU.PNG" align="center" height="200"></p>
 
 <p align="justify"><em><b>
 FRU acting on the activations of the N most susceptible filters in a DNN layer. D represents the FRU kernel depth and
