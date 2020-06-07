@@ -147,6 +147,6 @@ Our defense is trained only one UAP attack examples. Please refer to Table 5. in
  </tbody> 
 </table>
 
-Note:  We use a pruned [VGG16](https://github.com/yihui-he/channel-pruning) model for compational efficiency. 
+Note:  We use a pruned [VGG16](https://github.com/yihui-he/channel-pruning) model for computational efficiency. 
        Secondary attack defense models are trained to defend against new white-box attacks computed using gradient information for the          baseline DNN + FRUs. Refer to Section 5.2.5 in our paper for additional details.
 
