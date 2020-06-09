@@ -157,3 +157,12 @@ Our defense is trained only one UAP attack examples. Please refer to Table 5. in
 Note:  We use a pruned [VGG16](https://github.com/yihui-he/channel-pruning) model for computational efficiency. 
        Secondary attack defense models are trained to defend against new white-box attacks computed using gradient information for the          baseline DNN + FRUs. Refer to Section 5.2.5 in our paper for additional details.
 
+## Usage
+
+We provide sample code in [defense_example.py]("https://github.com/tsborkar/Selective-feature-regeneration/blob/master/defense_example.py) for evaluating our proposed defense against various types of universal attack examples.
+
+Example 1: Evaluate proposed defense for ResNet152 against a UAP attack on a input image.
+```
+python defense_example.py --input /path/to/input/image --dnn ResNet152 
+    --load /path/to/trained/model_weights --attack UAP --defense True
+```
