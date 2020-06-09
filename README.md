@@ -159,7 +159,7 @@ Note:  We use a pruned [VGG16](https://github.com/yihui-he/channel-pruning) mode
 
 ## Usage
 
-We provide sample code in [defense_example.py]("https://github.com/tsborkar/Selective-feature-regeneration/blob/master/defense_example.py) for evaluating our proposed defense against various types of universal attack examples.
+We provide sample code in [defense_example.py](https://github.com/tsborkar/Selective-feature-regeneration/blob/master/defense_example.py) for evaluating our proposed defense against various types of universal attack examples.
 
 Example 1: Evaluate proposed defense for ResNet152 against a UAP attack on a input image.
 ```
