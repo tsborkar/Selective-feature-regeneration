@@ -17,7 +17,7 @@ with open(label_path) as f:
 parser = argparse.ArgumentParser()
 parser.add_argument('--input',default="test_image_icecream.JPEG",help='path to the input image')
 parser.add_argument('--dnn', default='ResNet152',choices=['CaffeNet', 'VGG_F', "GoogLeNet", "VGG16","ResNet152"], help='DNN arch to be used')
-parser.add_argument('--load', help='path to trained caffemodel and weights')
+parser.add_argument('--load', help='path to trained caffemodel weights')
 parser.add_argument('--attack',default='UAP',
                     choices=["UAP","FFF","SFool","NAG","GAP","GUAP","sPGD"],help='Type of universal attack to use')
 parser.add_argument('--defense', default='True', choices=['True', 'False'], help='Switch between baseline (no defense) and our proposed defense')
