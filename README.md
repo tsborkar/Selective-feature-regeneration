@@ -163,6 +163,21 @@ We provide sample code in [defense_example.py](https://github.com/tsborkar/Selec
 
 Example 1: Evaluate proposed defense for ResNet152 against a UAP attack on a input image.
 ```
-python defense_example.py --input /path/to/input/image --dnn ResNet152 
+python defense_example.py --input /path/to/input_image --dnn ResNet152 
     --load /path/to/trained/model_weights --attack UAP --defense True
+```
+
+Example 2: Evaluate proposed defense for CaffeNet against an unseen NAG attack on a default image.
+```
+python defense_example.py --dnn CaffeNet --load /path/to/trained/model_weights --attack NAG --defense True
+```
+
+Example 3: Evaluate baseline ResNet152 (no defense) against a UAP attack.
+```
+python defense_example.py --dnn ResNet152 --load /path/to/trained/model_weights --attack UAP --defense False
+```
+
+For a detailed list of usage options see below:
+``` 
+python defense_example.py --help
 ```
