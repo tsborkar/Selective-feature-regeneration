@@ -110,6 +110,13 @@ Our defense is trained only one UAP attack examples. Please refer to Table 5. in
  
  </table>
 
+## Dependencies
+- [Python-2.7](https://www.python.org/download/releases/2.7/)
+- [Caffe](https://caffe.berkeleyvision.org/) with python bindings and GPU support
+- [h5py]((http://www.h5py.org/) 
+- [numpy](http://www.numpy.org/)
+- [matplotlib](https://matplotlib.org/) for displaying images
+
 ## Trained Defense Models
 
 <table>
