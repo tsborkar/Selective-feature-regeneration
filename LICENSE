@@ -2,12 +2,17 @@ Copyright (c) 2020 Arizona Board of Regents. All Rights Reserved.
 Code developed by: Tejas Borkar (tsborkar@asu.edu)
 Contact: Tejas Borkar (tsborkar@asu.edu) and Lina Karam (karam@asu.edu)
 Image, Video, and Usabilty (IVU) Lab, http://ivulab.asu.edu , Arizona State University
+
 This copyright statement may not be removed from any file containing it or from modifications to these files.
 This copyright notice must also be included in any file or product that is derived from the source files.
-Redistribution and use of this code in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+Redistribution and use of this code in source and binary forms, with or without modification, are permitted 
+provided that the following conditions are met:
 – Redistribution’s of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
-– Redistribution’s in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
-– The Image, Video, and Usability Laboratory (IVU Lab, http://ivulab.asu.edu) is acknowledged in any publication that reports research results using this code, copies of this code, or modifications of this code.
+– Redistribution’s in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer 
+  in the documentation and/or other materials provided with the distribution.
+– The Image, Video, and Usability Laboratory (IVU Lab, http://ivulab.asu.edu) is acknowledged in any publication that reports 
+  research results using this code, copies of this code, or modifications of this code.
+  
 The code and our papers are to be cited in the bibliography as:
 T. Borkar, F. Heide and L. Karam, ”Defending Against Universal Attacks Through Selective Feature Regeneration,” IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2020, pp. 709-719.
 
