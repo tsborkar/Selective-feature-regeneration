@@ -7,7 +7,7 @@ Deep neural network (DNN) predictions have been shown to be vulnerable to carefu
 
 A complete description of our CVPR 2020 work can be found in the pre-print on [ArXiv](https://arxiv.org/abs/1906.03444) or at [CVF open access](http://openaccess.thecvf.com/content_CVPR_2020/html/Borkar_Defending_Against_Universal_Attacks_Through_Selective_Feature_Regeneration_CVPR_2020_paper.html). </p>
 
-For questions/comments, please email [Tejas Borkar](mailto:tsborkar@asu.edu)
+For questions/comments, please email [Tejas Borkar](mailto: tsborkar@asu.edu)
 
 ## Proposed Defense
 
