@@ -1,5 +1,5 @@
 #  Defending Against Universal Attacks Through Selective Feature Regeneration (CVPR 2020)
-<img src="https://github.com/tsborkar/Selective-feature-regeneration/blob/master/fig/5625-teaser.gif" width="350" height="350"> [<img src="fig/teaser_frame0.PNG" height="350" width="510">](https://youtu.be/wMWhb7xqubg)
+<img src="https://github.com/tsborkar/Selective-feature-regeneration/blob/master/fig/5625-teaser.gif" width="330" height="330"> [<img src="fig/teaser_frame0.PNG" height="330" width="480">](https://youtu.be/wMWhb7xqubg)
 
 ## Introduction
 <p align="justify">
