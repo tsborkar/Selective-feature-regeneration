@@ -37,8 +37,8 @@ else:
     img = Image.open(args.input).convert("RGB")
     w, h = img.size
 
-    # image resizing for VGG16 maintains the original aspect ratio of the image
-    if args.dnn=="VGG16":
+    # image resizing for VGG16 and VGG_F maintains the original aspect ratio of the image
+    if args.dnn=="VGG16" or args.dnn=="VGG_F":
         if w >= h:
             img = img.resize((256*w//h, 256))
         else:
