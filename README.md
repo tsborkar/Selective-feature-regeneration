@@ -186,10 +186,28 @@ git clone https://github.com/tsborkar/Selective-feature-regeneration.git
 ```
 >> ILSVRC_data_org
 ```
-Note: The Matlab code creates a class folder for each object class and moves images to their corresponding class folders.
+Note: The Matlab code creates a class folder for each object class and moves images to their corresponding class folders. The ImageNet evaluation codes provided in this repository assume the image files to be ordered by class in their own subfolder. The class_id to human readable label mapping used by our models can be found here: https://gist.github.com/yrevar/942d3a0ac09ec9e5eb3a
 
 ## ImageNet Evaluation (ILSVRC2012)
 Code is provided to reproduce our results published in Tables 2,3 and 5 of our paper.
+
+### Same-norm evaluation (Table 2 in paper)
+
+Example 1: Evaluating our CaffeNet defense against an L_inf UAP attack
+```
+python samenorm_ilsvrc_eval.py --input /path/to/imagenet_val/root_folder --dnn CaffeNet --load Models/CaffeNet/caffenet_FRU.caffemodel --defense True
+
+```
+Example 2: Evaluating baseline CaffeNet (no defense) against an L_inf UAP attack
+```
+python samenorm_ilsvrc_eval.py --input /path/to/imagenet_val/root_folder --dnn CaffeNet --load Models/CaffeNet/caffenet.caffemodel --defense False
+
+```
+
+For a detailed list of usage options see below:
+```
+python samenorm_ilsvrc_eval.py --help
+```
 
 
 
