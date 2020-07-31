@@ -167,7 +167,7 @@ Our defense is trained only one UAP attack examples. Please refer to Table 5. in
 </table>
 
 Note:  We use a pruned [VGG16](https://github.com/yihui-he/channel-pruning) model for computational efficiency. 
-       Secondary attack defense models are trained to defend against new white-box attacks computed using gradient information for the          baseline DNN + FRUs. Refer to Section 5.2.5 in our paper for additional details.
+       Secondary attack defense models are trained to defend against new white-box attacks computed using gradient information for the baseline DNN + FRUs. Refer to Section 5.2.5 in our paper for additional details.
  
 
 ## Install Selective Feature Regeneration Defense
@@ -195,12 +195,12 @@ Code is provided to reproduce our results published in Tables 2,3 and 5 of our p
 
 Example 1: Evaluating our CaffeNet defense against an L_inf UAP attack
 ```
-python samenorm_ilsvrc_eval.py --input /path/to/imagenet_val/root_folder --dnn CaffeNet --load Models/CaffeNet/caffenet_FRU.caffemodel --defense True
+python samenorm_ilsvrc_eval.py --input /path/to/imagenet_val/root_folder --dnn CaffeNet --load /path/to/trained/model_weights --defense True
 
 ```
 Example 2: Evaluating baseline CaffeNet (no defense) against an L_inf UAP attack
 ```
-python samenorm_ilsvrc_eval.py --input /path/to/imagenet_val/root_folder --dnn CaffeNet --load Models/CaffeNet/caffenet.caffemodel --defense False
+python samenorm_ilsvrc_eval.py --input /path/to/imagenet_val/root_folder --dnn CaffeNet --load /path/to/trained/model_weights --defense False
 
 ```
 
