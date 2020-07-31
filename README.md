@@ -130,7 +130,7 @@ Our defense is trained only one UAP attack examples. Please refer to Table 5. in
 - MATLAB (needed only for organizing ImageNet image files)
 
 ## Trained Defense Models
-
+Download our trained models from the table below:
 <table>
 <thead>
  <tr>
