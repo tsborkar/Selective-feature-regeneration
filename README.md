@@ -191,7 +191,7 @@ Note: The Matlab code creates a class folder for each object class and moves ima
 ## ImageNet Evaluation (ILSVRC2012)
 Code is provided to reproduce our results published in Tables 2,3 and 5 of our paper.
 
-### Same-norm evaluation (Table 2 in paper)
+### Same-norm evaluation (Table 2 in our paper)
 
 Example 1: Evaluating our CaffeNet defense against an L_inf UAP attack
 ```
@@ -208,6 +208,60 @@ For a detailed list of usage options see below:
 ```
 python samenorm_ilsvrc_eval.py --help
 ```
+
+### Cross-norm evaluation (Table 3 in our paper)
+
+
+Example 1: Evaluating our ResNet152 defense against an L_2 UAP attack
+```
+python crossnorm_ilsvrc_eval.py --input /path/to/imagenet_val/root_folder --dnn ResNet152 --load resnet152_FRU.caffemodel --defense True
+
+```
+Example 2: Evaluating baseline ResNet152 (no defense) against an L_2 UAP attack
+```
+python crossnorm_ilsvrc_eval.py --input /path/to/imagenet_val/root_folder --dnn ResNet152 --load resnet152.caffemodel --defense False
+
+```
+
+For a detailed list of usage options see below:
+```
+python crossnorm_ilsvrc_eval.py --help
+```
+
+### Unseen attacks against CaffeNet (Table 5 in our paper)
+
+Example 1: Evaluating our defense against an unseen NAG attack
+```
+python unseencaffenet_ilsvrc.py --input /path/to/imagenet_val/root_folder --load caffenet_FRU.caffemodel --attack NAG --defense True
+
+```
+Example 2: Evaluating baseline ResNet152 (no defense) against an FFF attack
+```
+python unseencaffenet_ilsvrc.py --input /path/to/imagenet_val/root_folder --load caffenet_FRU.caffemodel --attack FFF --defense True
+```
+
+For a detailed list of usage options see below:
+```
+python unseencaffenet_ilsvrc.py --help
+```
+
+### Unseen attacks against ResNet152 (Table 5 in our paper)
+
+Example 1: Evaluating our defense against an unseen GAP attack
+```
+python unseenresnet152_ilsvrc.py --input /path/to/imagenet_val/root_folder --load resnet152_FRU.caffemodel --attack GAP --defense True
+
+```
+Example 2: Evaluating baseline ResNet152 (no defense) against an sPGD attack
+```
+python unseenresnet152_ilsvrc.py --input /path/to/imagenet_val/root_folder --load resnet152_FRU.caffemodel --attack sPGD --defense True
+```
+
+For a detailed list of usage options see below:
+```
+python unseenresnet152_ilsvrc.py --help
+```
+
 
 
 
