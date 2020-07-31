@@ -235,7 +235,7 @@ Example 1: Evaluating our defense against an unseen NAG attack
 python unseencaffenet_ilsvrc.py --input /path/to/imagenet_val/root_folder --load caffenet_FRU.caffemodel --attack NAG --defense True
 
 ```
-Example 2: Evaluating baseline ResNet152 (no defense) against an FFF attack
+Example 2: Evaluating our defense against an FFF attack
 ```
 python unseencaffenet_ilsvrc.py --input /path/to/imagenet_val/root_folder --load caffenet_FRU.caffemodel --attack FFF --defense True
 ```
@@ -252,7 +252,7 @@ Example 1: Evaluating our defense against an unseen GAP attack
 python unseenresnet152_ilsvrc.py --input /path/to/imagenet_val/root_folder --load resnet152_FRU.caffemodel --attack GAP --defense True
 
 ```
-Example 2: Evaluating baseline ResNet152 (no defense) against an sPGD attack
+Example 2: Evaluating our defense against an sPGD attack
 ```
 python unseenresnet152_ilsvrc.py --input /path/to/imagenet_val/root_folder --load resnet152_FRU.caffemodel --attack sPGD --defense True
 ```
