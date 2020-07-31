@@ -195,12 +195,12 @@ Code is provided to reproduce our results published in Tables 2,3 and 5 of our p
 
 Example 1: Evaluating our CaffeNet defense against an L_inf UAP attack
 ```
-python samenorm_ilsvrc_eval.py --input /path/to/imagenet_val/root_folder --dnn CaffeNet --load /path/to/trained/model_weights --defense True
+python samenorm_ilsvrc_eval.py --input /path/to/imagenet_val/root_folder --dnn CaffeNet --load caffenet_FRU.caffemodel --defense True
 
 ```
 Example 2: Evaluating baseline CaffeNet (no defense) against an L_inf UAP attack
 ```
-python samenorm_ilsvrc_eval.py --input /path/to/imagenet_val/root_folder --dnn CaffeNet --load /path/to/trained/model_weights --defense False
+python samenorm_ilsvrc_eval.py --input /path/to/imagenet_val/root_folder --dnn CaffeNet --load caffenet.caffemodel --defense False
 
 ```
 
