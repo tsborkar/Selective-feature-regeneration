@@ -201,8 +201,8 @@ else:
 
     net = caffe.Classifier(model_proto, args.load, caffe.TEST)
     print('\n Accuracy on original images')
-    clean_acc = get_test_acc(net,num_test=20,use_noise=False)
+    clean_acc = get_test_acc(net,num_test=50,use_noise=False)
     print('\n Accuracy on adversarial images')
-    adv_acc = get_test_acc(net, num_test=20,use_noise=True)
+    adv_acc = get_test_acc(net, num_test=50,use_noise=True)
     print('\n Restoration rate: '+str((float(clean_acc[0,0])+float(adv_acc[0,0]))
                                       /(2*float(base_acc['ResNet152']))))
