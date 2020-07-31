@@ -5,7 +5,7 @@
 <p align="justify">
 Deep neural network (DNN) predictions have been shown to be vulnerable to carefully crafted adversarial perturbations. Specifically, image-agnostic (universal adversarial) perturbations added to any image can fool a target network into making erroneous predictions. Departing from existing defense strategies that work mostly in the image domain, we present a novel defense which operates in the DNN feature domain and effectively defends against such universal perturbations. Our approach identifies pre-trained convolutional features that are most vulnerable to adversarial noise and deploys trainable feature regeneration units which transform these DNN filter activations into resilient features that are robust to universal perturbations. Regenerating only the top 50% adversarially susceptible activations in at most 6 DNN layers and leaving all remaining DNN activations unchanged, we outperform existing defense strategies across different network architectures by more than 10% in restored accuracy. We show that without any additional modification, our defense trained on ImageNet with one type of universal attack examples effectively defends against other types of unseen universal attacks. 
 
-A complete description of our CVPR 2020 work can be found in the pre-print on [ArXiv](https://arxiv.org/abs/1906.03444) and on the [Project page](https://ivulab.asu.edu/project/selectivefeatureregeneration/). </p>
+A complete description of our CVPR 2020 work can be found on [CVF Open access](https://openaccess.thecvf.com/content_CVPR_2020/html/Borkar_Defending_Against_Universal_Attacks_Through_Selective_Feature_Regeneration_CVPR_2020_paper.html) or on [ArXiv](https://arxiv.org/abs/1906.03444) and on the [Project page](https://ivulab.asu.edu/project/selectivefeatureregeneration/). </p>
 For questions/comments, please email [Tejas Borkar](mailto:tsborkar@asu.edu)
 
 ## Proposed Defense
@@ -170,11 +170,33 @@ Note:  We use a pruned [VGG16](https://github.com/yihui-he/channel-pruning) mode
        Secondary attack defense models are trained to defend against new white-box attacks computed using gradient information for the          baseline DNN + FRUs. Refer to Section 5.2.5 in our paper for additional details.
  
 
+## Install Selective Feature Regeneration Defense
+Get the source code by cloning the repository :
+```
+git clone https://github.com/tsborkar/Selective-feature-regeneration.git
+```
+
+## Setting up ImageNet (ILSVRC2012) validation data
+1. Change to the source directory: ``` cd Selective-feature-regeneration ```
+2. Create folder for validation data ``` mkdir ILSVRC_data ```
+3. Download [ILSVRC2012](http://image-net.org/challenges/LSVRC/2012/index) validation data files
+4. Extract validation set files to ```ILSVRC_data``` folder.
+5. Change to ```misc``` folder in the ```Selective-feature-regeneration``` source directory: ``` cd Selective-feature-regeneration/misc ```
+6. Start MATLAB ```matlab``` and run ```ILSVRC_data_org.m```
+```
+>> ILSVRC_data_org
+```
+Note: The Matlab code creates a class folder for each object class and moves images to their corresponding class folders.
+
+## ImageNet Evaluation (ILSVRC2012)
+Code is provided to reproduce our results published in Tables 2,3 and 5 of our paper.
 
 
-## Usage
 
-We provide sample code in [defense_example.py](https://github.com/tsborkar/Selective-feature-regeneration/blob/master/defense_example.py) for evaluating our proposed defense against various types of universal attack examples.
+
+## General Usage
+
+Sample code is provided in [defense_example.py](https://github.com/tsborkar/Selective-feature-regeneration/blob/master/defense_example.py) for evaluating our proposed defense against various types of universal attack examples.
 
 Example 1: Evaluate proposed defense for ResNet152 against a UAP attack on an input image.
 ```
